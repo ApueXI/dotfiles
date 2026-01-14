@@ -37,7 +37,9 @@ Set_keymap("v", "<", "<gv")
 -- Additional stuff where i dont know where to categorize
 Set_keymap("n", "<C-t>", ":vsplit | terminal<CR>", "Open termimal in split")
 Set_keymap("n", "<C-s>", ":w<CR>", "Save confirm")
-Set_keymap("n", "<A-w>", ":bd<CR>", "Delete buffer")
+-- Set_keymap("n", "<A-w>", ":Bdelete<CR>", "Delete buffer")
+Set_keymap("n", "<A-w>", ":bp<bar>bd #<CR>", "Delete buffer but keep window")
+Set_keymap("n", "<C-\\>", "<C-w>v", "Split current file vertically")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })

@@ -32,8 +32,8 @@ vim.o.relativenumber = true -- removed numbers from moving and make it static
 -- NOTE: window split
 vim.o.splitright = true
 vim.o.splitbelow = true
-vim.o.scrolloff = 8 -- keep at least 8 lines when scrolling
-vim.o.sidescrolloff = 8 -- keep at least 8 lines when scrolling
+vim.o.scrolloff = 10 -- keep at least 8 lines when scrolling
+vim.o.sidescrolloff = 10 -- keep at least 8 lines when scrolling
 
 -- NOTE: performance & responsiveness
 vim.o.updatetime = 250 -- decrease update time

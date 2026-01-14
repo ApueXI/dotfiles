@@ -9,7 +9,7 @@ return { -- You can easily change to a different colorscheme.
     ---@diagnostic disable-next-line: missing-fields
     require("tokyonight").setup({
       styles = {
-        comments = { italic = false }, -- Disable italics in comments
+        comments = { italic = false, fg = "#8B8B8B" }, -- Disable italics in comments
       },
     })
 
@@ -17,11 +17,5 @@ return { -- You can easily change to a different colorscheme.
     -- Like many other themes, this one has different styles, and you could load
     -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
     vim.cmd.colorscheme("tokyonight-night")
-
-    -- Changes the comment color
-    vim.api.nvim_set_hl(0, "Comment", {
-      fg = "#8B8B8B",
-      italic = true,
-    })
   end,
 }
