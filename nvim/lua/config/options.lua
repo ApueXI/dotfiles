@@ -38,7 +38,7 @@ vim.o.sidescrolloff = 10 -- keep at least 8 lines when scrolling
 -- NOTE: performance & responsiveness
 vim.o.updatetime = 250 -- decrease update time
 vim.o.timeoutlen = 300 -- decrease mapped sequence wait time
-vim.o.lazyredraw = true -- reduces screen redraws during intensive operations to improve performance.
+vim.o.lazyredraw = false -- reduces screen redraws during intensive operations to improve performance.
 
 -- NOTE: files & undo
 vim.o.undofile = true -- save undo history enable break indent

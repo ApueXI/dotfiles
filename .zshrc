@@ -45,9 +45,14 @@ alias lvim="NVIM_APPNAME=nvim_lazy nvim"
 alias schd="mdcat /home/cred/.sched/.sched.md"
 # alias schd="bat --style=plain --language=markdown --theme='Catppuccin Latte' /home/cred/sched.md"
 
-# To see which mirror list is fast
-alias reflector_scr='reflector --sort score --age 48 --ipv4 --protocol https --connection-timeout 30 --latest 16 --verbose --country Japan,Singapore,South_Korea,Philippines'
-alias reflector_spd='reflector --sort rate --age 48 --ipv4 --protocol https --connection-timeout 30 --latest 16 --verbose --country Japan,Singapore,South_Korea,Philippines'
+# To Update mirror list
+alias reflector_scr='reflector --sort score --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --verbose --country Japan,Singapore,South_Korea,Philippines'
+alias reflector_spd='reflector --sort rate --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --verbose --country Japan,Singapore,South_Korea,Philippines'
+
+# Extract stuff into dedicated folder
+alias extract='7z x -o/home/cred/extracted-stuff'
+# Zip folder, give the extact directory
+alias zip='python /home/cred/zipping.py'
 
 export EDITOR=nvim
 function y() {

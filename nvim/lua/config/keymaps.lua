@@ -19,6 +19,8 @@ Set_keymap("i", "<C-BS>", "<C-w>") -- Removes a whole word before the cursor e.g
 --   end
 -- end, "Toggle file explorer")
 Set_keymap("n", "<C-a>", "ggVG$", "You have selected all words") -- Selects all words
+
+-- Move 5 lines per...
 Set_keymap("n", "<A-K>", "5k") -- Move x lines per up
 Set_keymap("n", "<A-J>", "5j") -- Move x lines per down
 
