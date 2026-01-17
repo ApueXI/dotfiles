@@ -9,7 +9,7 @@ return { -- You can easily change to a different colorscheme.
     ---@diagnostic disable-next-line: missing-fields
     require("tokyonight").setup({
       styles = {
-        comments = { italic = false, fg = "#8B8B8B" }, -- Disable italics in comments
+        comments = { italic = true, fg = "#8B8B8B" }, -- Disable italics in comments
       },
     })
 

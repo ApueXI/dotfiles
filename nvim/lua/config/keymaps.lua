@@ -20,17 +20,17 @@ Set_keymap("i", "<C-BS>", "<C-w>") -- Removes a whole word before the cursor e.g
 -- end, "Toggle file explorer")
 Set_keymap("n", "<C-a>", "ggVG$", "You have selected all words") -- Selects all words
 
--- Move 5 lines per...
+-- Normal Move 5 lines per...
 Set_keymap("n", "<A-K>", "5k") -- Move x lines per up
 Set_keymap("n", "<A-J>", "5j") -- Move x lines per down
+
+-- View Move 5 lines per...
+Set_keymap("v", "<A-K>", "5k") -- Move x lines per up
+Set_keymap("v", "<A-J>", "5j") -- Move x lines per down
 
 -- Move line down/up in NORMAL mode
 Set_keymap("n", "<A-j>", ":m .+1<CR>==")
 Set_keymap("n", "<A-k>", ":m .-2<CR>==")
-
--- Move selected lines down/up in VISUAL mode
-Set_keymap("v", "<A-j>", ":m '>+1<CR>gv=gv")
-Set_keymap("v", "<A-k>", ":m '<-2<CR>gv=gv")
 
 -- Visual mode indent/unindent with Tab / Shift+Tab
 Set_keymap("v", ">", ">gv")
@@ -42,6 +42,11 @@ Set_keymap("n", "<C-s>", ":w<CR>", "Save confirm")
 -- Set_keymap("n", "<A-w>", ":Bdelete<CR>", "Delete buffer")
 Set_keymap("n", "<A-w>", ":bp<bar>bd #<CR>", "Delete buffer but keep window")
 Set_keymap("n", "<C-\\>", "<C-w>v", "Split current file vertically")
+
+-- Open Dashbaord
+Set_keymap("n", "<leader>h", function()
+  require("snacks").dashboard()
+end, "Open Dashboard")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
