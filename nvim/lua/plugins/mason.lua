@@ -7,16 +7,16 @@ return {
         "github:mason-org/mason-registry",
         "github:Crashdummyy/mason-registry",
       },
+      ensure_installed = {
+        "jq",
+        "fantomas",
+        "prettierd",
+        "ruff",
+        "shfmt",
+        "stylua",
+        "netcoredbg",
+        "stylelint",
+      },
     },
   },
-
-  -- {
-  --   "mason-org/mason-lspconfig.nvim",
-  --   opts = {
-  --     ensure_installed = {
-  --       "lua_ls",
-  --       "rust_analyzer",
-  --     },
-  --   },
-  -- },
 }

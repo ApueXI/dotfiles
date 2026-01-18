@@ -33,6 +33,7 @@ return {
     keymaps = {
       show_help = "<f1>",
     },
+    auto_set_cwd = true,
   },
   -- 👇 if you use `open_for_directories=true`, this is recommended
   init = function()

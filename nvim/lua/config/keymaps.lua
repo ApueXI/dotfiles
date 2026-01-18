@@ -48,6 +48,12 @@ Set_keymap("n", "<leader>h", function()
   require("snacks").dashboard()
 end, "Open Dashboard")
 
+-- Rest run
+Set_keymap("n", "<leader>rr", ":Rest run<CR>", "Rest Run")
+Set_keymap("n", "<leader>bw", ":bd<CR>", "Delete buffer / buffer split")
+
+Set_keymap("n", "<leader> ", "<cmd>Yazi cwd<cr>", "Open Yazi")
+
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
