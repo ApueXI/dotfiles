@@ -8,7 +8,7 @@ return {
     -- - "auto": Does nothing for filewatching, leaving everything as default
     -- - "roslyn": Turns off neovim filewatching which will make roslyn do the filewatching
     -- - "off": Hack to turn off all filewatching. (Can be used if you notice performance issues)
-    filewatching = "auto",
+    filewatching = "roslyn",
 
     -- Optional function that takes an array of targets as the only argument. Return the target you
     -- want to use. If it returns `nil`, then it falls back to guessing the target like normal
@@ -46,5 +46,15 @@ return {
 
     -- If the plugin should silence notifications about initialization
     silent = false,
+
+    settings = {
+      ["csharp|inlay_hints"] = {
+        csharp_enable_inlay_hints_for_implicit_object_creation = true,
+        csharp_enable_inlay_hints_for_implicit_variable_types = true,
+      },
+      ["csharp|code_lens"] = {
+        dotnet_enable_references_code_lens = true,
+      },
+    },
   },
 }

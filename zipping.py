@@ -5,11 +5,9 @@ import sys
 
 def main():
     print("=== 7-Zip ZIP Creator ===")
-    print()
 
-    target = input(
-        "Enter file or folder to zip: \ne.g. /home/cred/Pictures/soslit_final_project_ss"
-    ).strip()
+    print()
+    target = input("Enter file/folder dir to zip: ").strip()
     if not target:
         print("Target cannot be empty.")
         sys.exit(1)
@@ -18,12 +16,12 @@ def main():
         print(f"Error: '{target}' does not exist.")
         sys.exit(1)
 
-    zip_name = input("Enter zip name (without .zip): ").strip()
+    zip_name = input("Enter zipped file/folder name (without .zip): ").strip()
     if not zip_name:
         print("Zip name cannot be empty.")
         sys.exit(1)
 
-    zip_file = f"{zip_name}.zip"
+    zip_file = f"/home/cred/stuff-zipped/{zip_name}.zip"
 
     command = ["7z", "a", zip_file, target]
 

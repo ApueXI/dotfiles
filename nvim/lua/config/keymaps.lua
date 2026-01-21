@@ -50,9 +50,21 @@ end, "Open Dashboard")
 
 -- Rest run
 Set_keymap("n", "<leader>rr", ":Rest run<CR>", "Rest Run")
+
+-- Delete the buffer window, i really use this for deleting the result in .http
 Set_keymap("n", "<leader>bw", ":bd<CR>", "Delete buffer / buffer split")
 
-Set_keymap("n", "<leader> ", "<cmd>Yazi cwd<cr>", "Open Yazi")
+-- Opens Yazi on leader space instead of Lazyvim default one
+-- Set_keymap("n", "<leader> ", "<cmd>Yazi cwd<cr>", "Open Yazi")
+
+-- Map to preview .md files
+Set_keymap("n", "<leader>m", ":MarkdownPreview<CR>", "Preview .md file")
+
+-- Toggle reference/s
+Set_keymap("n", "<leader>rt", ":ReferencerToggle<CR>", "Toggle referencer")
+
+-- Save all
+Set_keymap("n", "<leader>ba", ":wa", "Save all")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })

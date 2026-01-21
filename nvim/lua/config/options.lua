@@ -72,3 +72,5 @@ vim.g.netrw_banner = nil
 vim.g.netrw_liststyle = nil
 vim.g.netrw_browse_split = nil
 vim.g.netrw_winsize = nil
+
+vim.g.python3_host_prog = vim.fn.getcwd() .. "/.venv/bin/python"

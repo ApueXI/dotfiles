@@ -33,7 +33,26 @@ return {
     keymaps = {
       show_help = "<f1>",
     },
-    auto_set_cwd = true,
+    -- auto_set_cwd = true,
+
+    open_file_function = function(chosen_path, config, state)
+      local is_dir = vim.fn.isdirectory(chosen_path) == 1
+
+      if not vim.g.yazi_from_dashboard then
+        return
+      end
+
+      if is_dir then
+        -- if it’s a directory, cd into it directly
+        vim.cmd("cd " .. chosen_path)
+        vim.cmd("edit " .. chosen_path)
+      else
+        -- if it’s a file, cd to its folder
+        vim.cmd("cd " .. vim.fn.fnamemodify(chosen_path, ":h"))
+        -- open the file
+        vim.cmd("edit " .. chosen_path)
+      end
+    end,
   },
   -- 👇 if you use `open_for_directories=true`, this is recommended
   init = function()

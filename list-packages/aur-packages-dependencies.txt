@@ -1,0 +1,11 @@
+bruno 3.0.2-1
+bruno-debug 3.0.2-1
+neovim-git-debug 0.12.0.r1850.g99e8b61376-1
+peaclock-debug 0.4.3-2
+smassh-bin-debug 3.2.1-1
+swaylock-effects 1.7.0.0-4
+swaylock-effects-debug 1.7.0.0-4
+tty-clock-debug 2.3-2
+visual-studio-code-bin 1.108.1-1
+yay 12.5.7-1
+yay-debug 12.5.7-1
