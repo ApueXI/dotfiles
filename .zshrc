@@ -107,8 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 autoload -U colors && colors
-PROMPT='%F{yellow}%n@arch%f %F{blue}%~%f %# '
-
+PROMPT='%F{yellow}%n@arch%f %F{green}%~%f %# '
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -151,8 +150,12 @@ alias c_pwd='pwd | wl-copy'
 # See packages and put them in a .txt file
 alias list_packages='pacman -Qen > /home/cred/list-packages/pacman-packages.txt;
                       pacman -Qn > /home/cred/list-packages/pacman-packages-dependencies.txt;
-                      pacman -Qem > /home/cred/list-packages/aur-packages.txt
-                      pacman -Qm > /home/cred/list-packages/aur-packages-dependencies.txt'
+                      pacman -Qem > /home/cred/list-packages/aur-packages.txt;
+                      pacman -Qm > /home/cred/list-packages/aur-packages-dependencies.txt;
+                      pacman -Qen > /home/cred/.dotfiles/list-packages/pacman-packages.txt;
+                      pacman -Qn > /home/cred/.dotfiles/list-packages/pacman-packages-dependencies.txt;
+                      pacman -Qem > /home/cred/.dotfiles/list-packages/aur-packages.txt;
+                      pacman -Qm > /home/cred/.dotfiles/list-packages/aur-packages-dependencies.txt'
 
 export EDITOR=nvim
 function y() {

@@ -64,7 +64,7 @@ Set_keymap("n", "<leader>m", ":MarkdownPreview<CR>", "Preview .md file")
 Set_keymap("n", "<leader>rt", ":ReferencerToggle<CR>", "Toggle referencer")
 
 -- Save all
-Set_keymap("n", "<leader>ba", ":wa", "Save all")
+Set_keymap("n", "<leader>ba", ":wa<CR>", "Save all")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
