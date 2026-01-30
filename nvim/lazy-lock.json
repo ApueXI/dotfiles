@@ -33,6 +33,8 @@
   "roslyn.nvim": { "branch": "main", "commit": "2b9a8366a29b0a2a7e51cac87f3ca6345f617790" },
   "schemastore.nvim": { "branch": "main", "commit": "fb7b9034285a5658c746faa12eff8c1c9d9b11b1" },
   "snacks.nvim": { "branch": "main", "commit": "fe7cfe9800a182274d0f868a74b7263b8c0c020b" },
+  "tailwind-fold.nvim": { "branch": "main", "commit": "e2ba5ee1ca9b74208709fe9d7314b8aa753b26a7" },
+  "tailwindcss-colorizer-cmp.nvim": { "branch": "main", "commit": "3d3cd95e4a4135c250faf83dd5ed61b8e5502b86" },
   "todo-comments.nvim": { "branch": "main", "commit": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668" },
   "tokyonight.nvim": { "branch": "main", "commit": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd" },
   "trouble.nvim": { "branch": "main", "commit": "bd67efe408d4816e25e8491cc5ad4088e708a69a" },

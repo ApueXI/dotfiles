@@ -18,7 +18,7 @@ return {
       roslyn = {}, -- C# support
       sqlls = {},
       terraformls = {},
-      ts_ls = {},
+      -- ts_ls = {},
       yamlls = {},
       eslint = require("plugins.lsp-stuff.eslint"),
       jsonls = require("plugins.lsp-stuff.jsonls"),

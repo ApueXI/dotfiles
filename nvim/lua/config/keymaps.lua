@@ -66,6 +66,9 @@ Set_keymap("n", "<leader>rt", ":ReferencerToggle<CR>", "Toggle referencer")
 -- Save all
 Set_keymap("n", "<leader>ba", ":wa<CR>", "Save all")
 
+-- Tailwind fold toggle
+Set_keymap("n", "<leader>tt", ":TailwindFoldToggle<CR>", "Toggle Tailwind Fold")
+
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
