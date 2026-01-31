@@ -7,10 +7,6 @@ return {
   end,
 
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = { ensure_installed = { "c_sharp", "fsharp" } },
-  },
-  {
     "stevearc/conform.nvim",
     optional = true,
     opts = {

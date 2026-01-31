@@ -18,5 +18,9 @@ return {
         heex = "html-eex",
       },
     },
+    lint = {
+      -- cssConflict = "warning",
+      invalidApply = "ignore", -- ignores @apply warnings
+    },
   },
 }

@@ -15,7 +15,8 @@ return {
       experimental = {
         maxInlayHintLength = 30,
         completion = {
-          enableServerSideFuzzyMatch = true,
+          -- Disabled
+          enableServerSideFuzzyMatch = false,
         },
       },
     },
@@ -26,12 +27,29 @@ return {
       },
       inlayHints = {
         enumMemberValues = { enabled = true },
-        functionLikeReturnTypes = { enabled = true },
         parameterNames = { enabled = "literals" },
-        parameterTypes = { enabled = true },
-        propertyDeclarationTypes = { enabled = true },
+
+        -- Disabled
+        functionLikeReturnTypes = { enabled = false },
+        parameterTypes = { enabled = false },
+        propertyDeclarationTypes = { enabled = false },
         variableTypes = { enabled = false },
       },
+      format = { enable = false },
+    },
+    javascript = {
+      format = { enable = false },
     },
   },
 }
+
+-- "typescript.inlayHints.parameterTypes.enabled": {
+--   "type": "boolean",
+--   "default": false,
+--   "markdownDescription": {
+--     "message": "Enable/disable inlay hints for implicit parameter types:\n```typescript\n\nel.addEventListener('click', e /* :MouseEvent */ => ...)\n \n```",
+--     "comment": [
+--       "The text inside the ``` block is code and should not be localized."
+--     ]
+--   }
+-- },

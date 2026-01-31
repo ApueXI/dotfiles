@@ -13,6 +13,10 @@ return {
 
     -- Add additional filetypes
     vim.list_extend(opts.filetypes, opts.filetypes_include or {})
+
+    -- 🚀 Performance flags
+    opts.flags = opts.flags or {}
+    opts.flags.debounce_text_changes = 150
   end,
 
   vtsls = function(_, opts)

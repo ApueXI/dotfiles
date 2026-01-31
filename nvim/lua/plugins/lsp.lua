@@ -26,7 +26,7 @@ return {
       ruff = require("plugins.lsp-stuff.ruff"),
       ruff_lsp = require("plugins.lsp-stuff.ruff_lsp"),
       vtsls = require("plugins.lsp-stuff.vtsls"),
-      setup = require("plugins.lsp-stuff.setup"),
     },
+    setup = require("plugins.lsp-stuff.setup"),
   },
 }
