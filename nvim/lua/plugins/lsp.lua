@@ -20,12 +20,21 @@ return {
       terraformls = {},
       -- ts_ls = {},
       yamlls = {},
+      tsserver = {
+        enabled = false,
+      },
+      ts_ls = {
+        enabled = false,
+      },
+      vtsls = {
+        enabled = false,
+      },
       eslint = require("plugins.lsp-stuff.eslint"),
       jsonls = require("plugins.lsp-stuff.jsonls"),
       tailwindcss = require("plugins.lsp-stuff.tailwind"),
       ruff = require("plugins.lsp-stuff.ruff"),
       ruff_lsp = require("plugins.lsp-stuff.ruff_lsp"),
-      vtsls = require("plugins.lsp-stuff.vtsls"),
+      -- vtsls = require("plugins.lsp-stuff.vtsls"),
     },
     setup = require("plugins.lsp-stuff.setup"),
   },

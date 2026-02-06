@@ -8,18 +8,19 @@ return {
     "typescript.tsx",
   },
   settings = {
-    complete_function_calls = true,
+    complete_function_calls = false,
     vtsls = {
       enableMoveToFileCodeAction = true,
       autoUseWorkspaceTsdk = true,
       experimental = {
-        maxInlayHintLength = 30,
+        maxInlayHintLength = 50,
         completion = {
           -- Disabled
           enableServerSideFuzzyMatch = false,
         },
       },
     },
+
     typescript = {
       updateImportsOnFileMove = { enabled = "always" },
       suggest = {
@@ -37,9 +38,27 @@ return {
       },
       format = { enable = false },
     },
+
     javascript = {
+      updateImportsOnFileMove = { enabled = "always" },
+      suggest = {
+        completeFunctionCalls = true,
+      },
+      inlayHints = {
+        enumMemberValues = { enabled = true },
+        parameterNames = { enabled = "literals" },
+
+        -- Disabled
+        functionLikeReturnTypes = { enabled = false },
+        parameterTypes = { enabled = false },
+        propertyDeclarationTypes = { enabled = false },
+        variableTypes = { enabled = false },
+      },
       format = { enable = false },
     },
+  },
+  flags = {
+    debounce_text_changes = 200, -- wait 200ms after typing
   },
 }
 

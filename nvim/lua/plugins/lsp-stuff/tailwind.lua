@@ -12,6 +12,11 @@ return {
   -- this defaults for Phoenix projects
   settings = {
     tailwindCSS = {
+      -- Delete this if shit goes wrong
+      validate = false,
+      classAttributes = { "class", "className" },
+      --
+
       includeLanguages = {
         elixir = "html-eex",
         eelixir = "html-eex",
