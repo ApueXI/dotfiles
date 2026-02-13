@@ -13,7 +13,7 @@ chromium 144.0.7559.109-1
 cmatrix 2.0-4
 cups 2:2.4.16-1
 cups-pdf 3.0.2-1
-discord 1:0.0.123-2
+discord 1:0.0.124-1
 dos2unix 7.5.4-1
 dotnet-runtime 10.0.0.sdk100-1
 dotnet-runtime-9.0 9.0.11.sdk112-1
