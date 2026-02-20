@@ -14,7 +14,7 @@ cmatrix 2.0-4
 cups 2:2.4.16-1
 cups-pdf 3.0.2-1
 dbeaver 25.3.4-1
-discord 1:0.0.124-1
+discord 1:0.0.125-1
 dos2unix 7.5.4-1
 dotnet-runtime 10.0.3.sdk103-1
 dotnet-runtime-9.0 9.0.12.sdk113-1

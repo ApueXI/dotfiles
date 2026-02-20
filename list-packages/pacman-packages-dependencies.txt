@@ -81,7 +81,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.38-1
 diffutils 3.12-2
-discord 1:0.0.124-1
+discord 1:0.0.125-1
 dos2unix 7.5.4-1
 dotnet-host 10.0.3.sdk103-1
 dotnet-runtime 10.0.3.sdk103-1
