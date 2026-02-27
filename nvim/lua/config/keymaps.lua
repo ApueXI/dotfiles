@@ -48,8 +48,8 @@ Set_keymap("n", "<leader>h", function()
   require("snacks").dashboard()
 end, "Open Dashboard")
 
--- Rest run
-Set_keymap("n", "<leader>rr", ":Rest run<CR>", "Rest Run")
+-- NOTE: Rest run: This doesn't work anymore, at least for me. It causes error, i know use kulala.nvim
+-- Set_keymap("n", "<leader>rr", ":Rest run<CR>", "Rest Run")
 
 -- Delete the buffer window, i really use this for deleting the result in .http
 Set_keymap("n", "<leader>bw", ":bd<CR>", "Delete buffer / buffer split")
