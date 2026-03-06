@@ -122,6 +122,7 @@ alias nmdw='nmcli device wifi'
 alias nmdwl='nmcli device wifi list'
 alias nmdwr='nmcli device wifi rescan'
 alias nmdwconn='nmcli device wifi connect' # nmdwconn 'ssid' password 'psww' hidden yes
+alias nmdshow='nmcli -p device show'
 
 alias avim="NVIM_APPNAME=nvim_acob nvim"
 alias kvim="NVIM_APPNAME=nvim_kick nvim"
@@ -135,9 +136,9 @@ alias schd="mdcat /home/cred/.sched/.sched.md"
 alias how_mnt="mdcat /home/cred/mount-nfts-hdd.md"
 
 # To Update mirror list
-alias reflector_scr='reflector --sort score --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --verbose --country Japan,Singapore,South_Korea,Philippines'
-alias reflector_spd='reflector --sort rate --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --verbose --country Japan,Singapore,South_Korea,Philippines'
-alias reflector_spd_save='reflector --sort rate --age 48 --ipv4 --protocol https --connection-timeout 15 --latest 20 --save /home/cred/mirrorlist.txt --verbose --country Japan,Singapore,South_Korea,Philippines'
+alias reflector_scr='reflector --sort score --age 96 --ipv4 --protocol https --connection-timeout 15  --verbose --country Japan,Singapore,South_Korea,Philippines'
+alias reflector_spd='reflector --sort rate --age 96 --ipv4 --protocol https --connection-timeout 15 --verbose --country Japan,Singapore,South_Korea,Philippines'
+alias reflector_spd_save='reflector --sort rate --age 96 --ipv4 --protocol https --connection-timeout 15 --save /home/cred/mirrorlist.txt --verbose --country Japan,Singapore,South_Korea,Philippines'
 
 # Extract stuff into dedicated folder
 alias extract='7z x -o/home/cred/stuff-extracted'
@@ -156,6 +157,8 @@ alias list_packages='pacman -Qen > /home/cred/list-packages/pacman-packages.txt;
                       pacman -Qn > /home/cred/.dotfiles/list-packages/pacman-packages-dependencies.txt;
                       pacman -Qem > /home/cred/.dotfiles/list-packages/aur-packages.txt;
                       pacman -Qm > /home/cred/.dotfiles/list-packages/aur-packages-dependencies.txt'
+
+alias autofister="mpv --fs /home/cred/autofister_unarchived_karaoke.mp4"
 
 export EDITOR=nvim
 function y() {
