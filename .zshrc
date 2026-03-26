@@ -143,10 +143,17 @@ alias reflector_spd_save='reflector --sort rate --age 96 --ipv4 --protocol https
 # Extract stuff into dedicated folder
 alias extract='7z x -o/home/cred/stuff-extracted'
 # Zip file/folder, give the extact directory
-alias zip='python /home/cred/zipping.py'
+alias zip='python /home/cred/python_scripts/zipping.py'
+
+# Generate python secrets
+alias gen_pysecrets='python /home/cred/python_scripts/gen_secrets.py'
 
 # Copy to clipboard the current directory
 alias c_pwd='pwd | wl-copy'
+
+# Shutdown in x minutes
+alias timed_shutdown='python /home/cred/python_scripts/shutdown.py'
+
 
 # See packages and put them in a .txt file
 alias list_packages='pacman -Qen > /home/cred/list-packages/pacman-packages.txt;
