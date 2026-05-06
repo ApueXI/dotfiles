@@ -11,7 +11,6 @@ return {
       emmet_language_server = {},
       graphql = {},
       fsautocomplete = {}, -- F# support
-      html = {},
       lua_ls = {},
       pyright = {},
       roslyn = {}, -- C# support
@@ -24,12 +23,24 @@ return {
       ts_ls = {
         enabled = false,
       },
+      laravel_ls = {},
+      html = { filetypes = { "php", "blade" } },
+      intelephense = { filetypes = { "php", "blade" } },
       eslint = require("plugins.lsp-stuff.eslint"),
       jsonls = require("plugins.lsp-stuff.jsonls"),
       tailwindcss = require("plugins.lsp-stuff.tailwind"),
       ruff = require("plugins.lsp-stuff.ruff"),
       ruff_lsp = require("plugins.lsp-stuff.ruff_lsp"),
       vtsls = require("plugins.lsp-stuff.vtsls"),
+      -- phpactor = {
+      --   enabled = lsp == "phpactor",
+      -- },
+      -- intelephense = {
+      --   enabled = lsp == "intelephense",
+      -- },
+      -- [lsp] = {
+      --   enabled = true,
+      -- },
 
       -- csharp_ls = {},
     },

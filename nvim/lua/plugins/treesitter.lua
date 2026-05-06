@@ -12,6 +12,8 @@ return {
       "ninja",
       "rst",
       "json5",
+      "php",
+      "blade",
     },
   },
 }

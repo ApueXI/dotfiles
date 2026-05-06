@@ -138,7 +138,7 @@ alias how_mnt="mdcat /home/cred/mount-nfts-hdd.md"
 # To Update mirror list
 alias reflector_scr='reflector --sort score --age 96 --ipv4 --protocol https --connection-timeout 15  --verbose --country Japan,Singapore,South_Korea,Philippines'
 alias reflector_spd='reflector --sort rate --age 96 --ipv4 --protocol https --connection-timeout 15 --verbose --country Japan,Singapore,South_Korea,Philippines'
-alias reflector_spd_save='reflector --sort rate --age 96 --ipv4 --protocol https --connection-timeout 15 --save /home/cred/mirrorlist.txt --verbose --country Japan,Singapore,South_Korea,Philippines'
+alias reflector_spd_save='reflector --sort rate --age 96 --ipv4 --protocol https --connection-timeout 15 --save /home/cred/mirrorlist_reflector --verbose --country Japan,Singapore,South_Korea,Philippines'
 
 # Extract stuff into dedicated folder
 alias extract='7z x -o/home/cred/stuff-extracted'

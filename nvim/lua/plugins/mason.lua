@@ -16,6 +16,8 @@ return {
         "netcoredbg",
         "stylelint",
         "roslyn",
+        "phpcs",
+        "php-cs-fixer",
         -- "csharpier",
       },
     },
