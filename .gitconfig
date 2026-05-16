@@ -1,0 +1,25 @@
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[user]
+    name = Apue
+    email = apue2434@gmail.com
+[core]
+    editor = nvim
+    autocrlf = input
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d $LOCAL $REMOTE"
+[alias]
+    lgg = log --oneline --graph --all
+    lgone = log --oneline
+    prb = pull --rebase
+    co = checkout
+    com = checkout main
+    dft = difftool
+    dfts = difftool --staged
+[color]
+  ui = auto

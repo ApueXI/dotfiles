@@ -32,13 +32,13 @@ vim.o.relativenumber = true -- removed numbers from moving and make it static
 -- NOTE: window split
 vim.o.splitright = true
 vim.o.splitbelow = true
-vim.o.scrolloff = 8 -- keep at least 8 lines when scrolling
-vim.o.sidescrolloff = 8 -- keep at least 8 lines when scrolling
+vim.o.scrolloff = 10 -- keep at least 8 lines when scrolling
+vim.o.sidescrolloff = 10 -- keep at least 8 lines when scrolling
 
 -- NOTE: performance & responsiveness
 vim.o.updatetime = 250 -- decrease update time
 vim.o.timeoutlen = 300 -- decrease mapped sequence wait time
-vim.o.lazyredraw = true -- reduces screen redraws during intensive operations to improve performance.
+vim.o.lazyredraw = false -- reduces screen redraws during intensive operations to improve performance.
 
 -- NOTE: files & undo
 vim.o.undofile = true -- save undo history enable break indent
@@ -72,3 +72,11 @@ vim.g.netrw_banner = nil
 vim.g.netrw_liststyle = nil
 vim.g.netrw_browse_split = nil
 vim.g.netrw_winsize = nil
+
+vim.g.python3_host_prog = vim.fn.getcwd() .. "/.venv/bin/python"
+
+vim.filetype.add({
+  pattern = {
+    [".*%.blade%.php"] = "blade",
+  },
+})
