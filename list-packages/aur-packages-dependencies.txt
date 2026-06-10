@@ -1,5 +1,5 @@
-bruno-bin 3.3.0-1
-bruno-bin-debug 3.3.0-1
+bruno-bin 3.4.2-1
+bruno-bin-debug 3.4.2-1
 bruno-debug 3.2.0-1
 floorp-bin 12.14.2-1
 httpdirfs-debug 1.2.7-2
@@ -16,9 +16,9 @@ spotify 1:1.2.90.451-1
 swaylock-effects 1.8.1-1
 swaylock-effects-debug 1.8.1-1
 tty-clock-debug 2.3-2
-visual-studio-code-bin 1.122.0-1
+visual-studio-code-bin 1.123.2-1
 wlrobs-debug 1.2-3
-yay 12.5.7-1
-yay-debug 12.5.7-1
-zen-browser-bin 1.20.1b-1
+yay 12.6.0-1
+yay-debug 12.6.0-1
+zen-browser-bin 1.20.2b-1
 zoom 7.0.5-1
