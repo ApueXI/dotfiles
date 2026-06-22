@@ -3,10 +3,10 @@ floorp-bin 12.14.2-1
 mdcat 2.7.1-2
 neovim-git-debug 0.12.0.r1850.g99e8b61376-1
 packettracer 9.0.0-1
-python313 3.13.13-1
+python313 3.13.14-1
 spotify 1:1.2.90.451-1
 swaylock-effects 1.8.1-1
-visual-studio-code-bin 1.123.2-1
+visual-studio-code-bin 1.124.0-1
 yay 12.6.0-1
-zen-browser-bin 1.20.2b-1
+zen-browser-bin 1.21b-1
 zoom 7.0.5-1
