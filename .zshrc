@@ -128,12 +128,12 @@ alias avim="NVIM_APPNAME=nvim_acob nvim"
 alias kvim="NVIM_APPNAME=nvim_kick nvim"
 # alias kvim="NVIM_APPNAME=kick-nvim nvim"
 
-# Show sched
-alias schd="mdcat /home/cred/.sched/.sched.md"
-# alias schd="bat --style=plain --language=markdown --theme='Catppuccin Latte' /home/cred/sched.md"
-
-# How to mount external hdd
-alias how_mnt="mdcat /home/cred/mount-nfts-hdd.md"
+# # Show sched
+# alias schd="mdcat /home/cred/.sched/.sched.md"
+# # alias schd="bat --style=plain --language=markdown --theme='Catppuccin Latte' /home/cred/sched.md"
+#
+# # How to mount external hdd
+# alias how_mnt="mdcat /home/cred/mount-nfts-hdd.md"
 
 # To Update mirror list
 alias reflector_scr='reflector --sort score --age 96 --ipv4 --protocol https --connection-timeout 15  --verbose --country Japan,Singapore,South_Korea,Philippines'
@@ -159,11 +159,7 @@ alias timed_shutdown='python /home/cred/python_scripts/shutdown.py'
 alias list_packages='pacman -Qen > /home/cred/list-packages/pacman-packages.txt;
                       pacman -Qn > /home/cred/list-packages/pacman-packages-dependencies.txt;
                       pacman -Qem > /home/cred/list-packages/aur-packages.txt;
-                      pacman -Qm > /home/cred/list-packages/aur-packages-dependencies.txt;
-                      pacman -Qen > /home/cred/.dotfiles/list-packages/pacman-packages.txt;
-                      pacman -Qn > /home/cred/.dotfiles/list-packages/pacman-packages-dependencies.txt;
-                      pacman -Qem > /home/cred/.dotfiles/list-packages/aur-packages.txt;
-                      pacman -Qm > /home/cred/.dotfiles/list-packages/aur-packages-dependencies.txt'
+                      pacman -Qm > /home/cred/list-packages/aur-packages-dependencies.txt'
 
 alias autofister="mpv --fs /home/cred/autofister_unarchived_karaoke.mp4"
 

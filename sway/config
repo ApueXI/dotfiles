@@ -23,7 +23,21 @@ set $menu wmenu-run
 #
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/pictures/Huashi-wallpaper-2.jpg fill
+output * bg ~/Pictures/Huashi-wallpaper-2.jpg fill
+# output * bg /home/cred/Pictures/Huashi-wallpaper-4.jpg fill
+# output * bg /home/cred/Pictures/BasoriTiara_Alexander_Herrington.jpg fill
+
+
+# Enable mako / floating notif
+exec_always mako
+
+# Enable battery script
+exec /home/cred/.local/bin/battery-check.sh
+exec /home/cred/.local/bin/full_charge.sh
+
+# Cliphist daemon
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
 
 # Disable to enable Window stacking
 # Enable to turn on dynamic tiling
@@ -65,9 +79,11 @@ output * bg ~/pictures/Huashi-wallpaper-2.jpg fill
        xkb_layout "eu"
    }
 
+# Touchscreen
    input "1267:10395:ELAN_Touchscreen" {
       events disabled
    }
+
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.
 
@@ -86,13 +102,14 @@ output * bg ~/pictures/Huashi-wallpaper-2.jpg fill
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec ~/.config/rofi/scripts/launcher_t1
+    # bindsym $mod+d exec ~/.config/rofi/scripts/launcher_t1
+    bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/launchers/type-1/style-5.rasi
 
     # Start your menu e.g. shutdown, reboot
     bindsym $mod+i exec ~/.config/rofi/scripts/powermenu_t1
 
     # Lockscreen 
-    bindsym ctrl++Shift+l exec kitty -e swaylock
+    bindsym ctrl+Shift+l exec swaylock
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -111,16 +128,30 @@ output * bg ~/pictures/Huashi-wallpaper-2.jpg fill
     bindsym $mod+b+l exec kitty -e bluetui
 
     # Screen shot a limited area
-    bindsym Print exec grim  ~/pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
-    bindsym alt+u exec grim  ~/pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
-    bindsym $mod+Shift+s exec grim -g "$(slurp)" ~/pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
+    bindsym Print exec grim  ~/Pictures/screenshots/$(date '+%Y-%m-%d_%H-%M').png
+
+    # Screen shot whole screen and copy to clipboard
+    # bindsym alt+u exec grim  ~/Pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png
+    bindsym Alt+u exec sh -c 'file=~/Pictures/screenshots/$(date "+%Y-%m-%d_%H-%M-%S-%3N").png; grim "$file"; wl-copy < "$file" && notify-send -t 3000 "Screenshot taken" "Saved to ~/Pictures/screenshots"'
+
+    # bindsym ctrl+alt+u exec grim  /home/cred/Pictures/online-class/$(date '+%Y-%m-%d_%H-%M-%S-%3N).png
+    bindsym ctrl+Alt+u exec sh -c 'file=~/Pictures/online-class/$(date "+%Y-%m-%d_%H-%M-%S-%3N").png; grim "$file"; wl-copy < "$file" && notify-send -t 3000 "Screenshot taken" "Saved to ~/Pictures/online-class"'
+    
+    # bindsym $mod+Shift+s exec grim -g "$(slurp)" ~/Pictures/screenshots/$(date '+%Y-%m-%d_%H-%M-%S-%3N').png
+    bindsym $mod+Shift+s exec sh -c 'file=~/Pictures/screenshots/$(date "+%Y-%m-%d_%H-%M-%S-%3N").png; grim -g "$(slurp)" "$file"; wl-copy < "$file" && notify-send -t 3000 "Screenshot taken" "Saved to ~/Pictures/screenshots"'
     
     # Open Yazi
     bindsym Shift+alt+e exec kitty -e yazi
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-#
+
+    # Cliphist
+    # $mod+Shift+v
+    bindsym $mod+Shift+m exec cliphist list | rofi -dmenu -theme ~/.config/rofi/launchers/type-1/style-7.rasi | cliphist decode | wl-copy
+
+
+
 # Moving around:
 #
     # Move your focus around
@@ -178,7 +209,7 @@ output * bg ~/pictures/Huashi-wallpaper-2.jpg fill
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
 
-    # default_orientation auto 
+    default_orientation auto 
 
     bindsym $mod+b split h
     bindsym $mod+v split v
