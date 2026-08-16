@@ -173,3 +173,4 @@ function y() {
 }
 
 export PATH="$PATH:/home/cred/.dotnet/tools"
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin:$HOME/.local/bin:$PATH"
