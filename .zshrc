@@ -130,7 +130,7 @@ alias kvim="NVIM_APPNAME=nvim_kick nvim"
 
 # # Show sched
 # alias schd="mdcat /home/cred/.sched/.sched.md"
-# # alias schd="bat --style=plain --language=markdown --theme='Catppuccin Latte' /home/cred/sched.md"
+# alias schd="bat --style=plain --language=markdown --theme='Catppuccin Latte' /home/cred/sched.md"
 #
 # # How to mount external hdd
 # alias how_mnt="mdcat /home/cred/mount-nfts-hdd.md"
@@ -149,7 +149,7 @@ alias zip='python /home/cred/python_scripts/zipping.py'
 alias gen_pysecrets='python /home/cred/python_scripts/gen_secrets.py'
 
 # Copy to clipboard the current directory
-alias c_pwd='pwd | wl-copy'
+alias cpwd='pwd | wl-copy'
 
 # Shutdown in x minutes
 alias timed_shutdown='python /home/cred/python_scripts/shutdown.py'
@@ -161,7 +161,11 @@ alias list_packages='pacman -Qen > /home/cred/list-packages/pacman-packages.txt;
                       pacman -Qem > /home/cred/list-packages/aur-packages.txt;
                       pacman -Qm > /home/cred/list-packages/aur-packages-dependencies.txt'
 
+# Play that one scene from autofister karaoke where its really really romantic and gigi lifts cece
 alias autofister="mpv --fs /home/cred/autofister_unarchived_karaoke.mp4"
+
+# clear all mako notifs
+alias makocls="makoctl dismiss -a"
 
 export EDITOR=nvim
 function y() {
