@@ -36,6 +36,7 @@ fzf 0.74.3-1
 git 2.55.0-1
 grim 1.5.0-2
 gst-plugin-pipewire 1:1.6.8-1
+gvfs-mtp 1.60.2-4
 imagemagick 7.1.2.30-1
 intel-media-driver 26.2.4-1
 intel-ucode 20260812-1

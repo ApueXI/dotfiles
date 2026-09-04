@@ -1,6 +1,7 @@
 bruno-bin 4.1.0-1
 floorp-bin 12.17.1-1
 neovim-git-debug 0.12.0.r1850.g99e8b61376-1
+onlyoffice-bin 9.4.0-1
 packettracer 9.0.1-1
 python313 3.13.15-1
 spotify 1:1.2.96.518-2
