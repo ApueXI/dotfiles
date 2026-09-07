@@ -17,6 +17,7 @@ return {
       sqlls = {},
       terraformls = {},
       yamlls = {},
+      dartls = {},
       tsserver = {
         enabled = false,
       },

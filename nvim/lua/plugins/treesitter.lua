@@ -7,13 +7,14 @@ return {
       },
     },
     ensure_installed = {
-      "c_sharp",
       "fsharp",
+      "c_sharp",
       "ninja",
       "rst",
       "json5",
       "php",
       "blade",
+      "dart",
     },
   },
 }

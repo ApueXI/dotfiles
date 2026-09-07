@@ -16,6 +16,7 @@ return {
       html = { "prettierd" },
       markdown = { "prettierd" },
       yaml = { "prettierd" },
+      dart = { "dart_format" },
     },
   },
 }

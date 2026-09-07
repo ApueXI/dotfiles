@@ -143,7 +143,7 @@ alias reflector_spd_save='reflector --sort rate --age 96 --ipv4 --protocol https
 # Extract stuff into dedicated folder
 alias extract='7z x -o/home/cred/stuff-extracted'
 # Zip file/folder, give the extact directory
-alias zip='python /home/cred/python_scripts/zipping.py'
+alias pyzip='python /home/cred/python_scripts/zipping.py'
 
 # Generate python secrets
 alias gen_pysecrets='python /home/cred/python_scripts/gen_secrets.py'
@@ -178,3 +178,4 @@ function y() {
 
 export PATH="$PATH:/home/cred/.dotnet/tools"
 export PATH="$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/develop/flutter/bin:$PATH"
