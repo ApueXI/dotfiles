@@ -23,7 +23,7 @@ spotify 1:1.2.96.518-2
 swaylock-effects 1.8.1-1
 swaylock-effects-debug 1.8.1-1
 tty-clock-debug 2.3-2
-visual-studio-code-bin 1.136.1-1
+visual-studio-code-bin 1.136.2-1
 wlrobs-debug 1.2-3
 wlroots0.19 0.19.3-1
 yay 13.0.1-1

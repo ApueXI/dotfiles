@@ -17,9 +17,16 @@
     lgg = log --oneline --graph --all
     lgone = log --oneline
     prb = pull --rebase
+    pffo = pull --ff-only
     co = checkout
     com = checkout main
+    sw = switch
+    swm = switch main
     dft = difftool
     dfts = difftool --staged
+    count = rev-list --count HEAD
+    count-all = rev-list --count --all
 [color]
   ui = auto
+[init]
+	defaultBranch = main

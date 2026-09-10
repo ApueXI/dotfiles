@@ -179,3 +179,6 @@ function y() {
 export PATH="$PATH:/home/cred/.dotnet/tools"
 export PATH="$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin:$HOME/.local/bin:$PATH"
 export PATH="$HOME/develop/flutter/bin:$PATH"
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH="$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"
